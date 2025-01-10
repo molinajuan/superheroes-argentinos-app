@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../auth/context/AuthContext';
-
+import './navbar-script.js';
 
 export const Navbar = () => {
 
@@ -18,7 +18,7 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-info bg-opacity-25 bg-gradient p-2 mb-3">
+        <nav id="mainNavbar" className="navbar navbar-expand-lg navbar-light bg-info bg-opacity-10 bg-gradient p-2">
             <div className="container">
 
                 <Link 

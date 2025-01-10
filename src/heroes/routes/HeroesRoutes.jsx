@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Navbar } from '../../ui';
+import { Footer, Navbar } from '../../ui';
 import { DcPage, HeroPage, MarvelPage, SearchPage } from '../pages';
 
 export const HeroesRoutes = () => {
@@ -20,7 +20,8 @@ export const HeroesRoutes = () => {
 
             </Routes>
         </div>
-
+        
+        <Footer />
 
     </>
   )
