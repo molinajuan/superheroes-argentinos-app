@@ -37,3 +37,14 @@ body {
     background-color: rgba(13, 202, 240, 0.1);
     border-color: rgba(13, 202, 240, 0.5);
 }
+
+.custom-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.custom-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
