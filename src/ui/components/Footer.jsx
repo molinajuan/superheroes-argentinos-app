@@ -11,7 +11,7 @@ export const Footer = () => {
                 <div className="col-md-6">
                     <h5>Juan Ignacio Molina</h5>
                     <p>
-                    Especialista en desarrollo Front-End con enfoque en React, apasionado por crear interfaces dinámicas y escalables que mejoren la experiencia del usuario. Detallista y metódico, combino habilidades técnicas y creativas para garantizar productos digitales de calidad.
+                    Especialista en Front-End con enfoque en React, apasionado por crear interfaces dinámicas y funcionales. Combino creatividad y técnica para garantizar calidad.
                     </p>
                 </div>
                 {/* <div className="col-md-3">
