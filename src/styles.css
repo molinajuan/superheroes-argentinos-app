@@ -1,0 +1,39 @@
+/* Import the font if not using a <link> tag */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Set the default font for the entire project */
+body {
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* Default weight */
+    font-style: normal;
+}
+
+/* Utility classes for specific font weights */
+.plus-jakarta-sans-light {
+    font-weight: 200;
+}
+
+.plus-jakarta-sans-regular {
+    font-weight: 400;
+}
+
+.plus-jakarta-sans-bold {
+    font-weight: 700;
+}
+
+.plus-jakarta-sans-extra-bold {
+    font-weight: 800;
+}
+
+
+.card {
+    background-color: rgba(13, 202, 240, 0.05);
+    border-color: rgba(13, 202, 240, 0.25);
+}
+
+.card:hover {
+    background-color: rgba(13, 202, 240, 0.1);
+    border-color: rgba(13, 202, 240, 0.5);
+}
