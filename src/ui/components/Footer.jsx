@@ -59,7 +59,7 @@ export const Footer = () => {
             <hr />
             <div className="row">
                 <div className="col-md-8">
-                    <p>&copy; 2025 Superheroes Argentinos. Proyecto adaptado del curso React: de cero a experto de Fernando Herrera.</p>
+                    <p>&copy; 2025 Superheroes Argentinos. Proyecto adaptado del curso <a href="https://cursos.devtalles.com/courses/react-cero-experto?coupon=learn-01" className="custom-link">React: de cero a experto</a> de Fernando Herrera.</p>
                 </div>
             </div>
         </div>
