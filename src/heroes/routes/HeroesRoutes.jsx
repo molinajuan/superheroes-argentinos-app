@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Footer, Navbar } from '../../ui';
-import { DcPage, HeroPage, MarvelPage, SearchPage } from '../pages';
+import { DcPage, AllPage, HeroPage, MarvelPage, SearchPage } from '../pages';
 
 export const HeroesRoutes = () => {
   return (
@@ -9,6 +9,7 @@ export const HeroesRoutes = () => {
 
         <div className="flex-grow-1 container mt-3">
             <Routes>
+                <Route path="/" element={<AllPage />} />
                 <Route path="marvel" element={<MarvelPage />} />
                 <Route path="dc" element={<DcPage />} />
                 

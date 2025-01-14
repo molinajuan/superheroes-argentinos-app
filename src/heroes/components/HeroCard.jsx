@@ -29,11 +29,11 @@ export const HeroCard = ({
 
                     <div className="row no-gutters">
                         
-                        <div className="col-4">
+                        <div className="col-4 pe-0">
                             <img src={ heroImageUrl } className="card-img rounded-0 rounded-start-2" alt={ superhero } />
                         </div>
 
-                        <div className="col-8">
+                        <div className="col-8 p-0">
 
                             <div className="card-body">
 
