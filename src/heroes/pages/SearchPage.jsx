@@ -33,9 +33,6 @@ export const SearchPage = () => {
 
   return (
     <>
-      <h3>Search</h3> 
-      <hr className='border border-info opacity-50' />
-
       <div className="row">
 
           <div className="col-5">
