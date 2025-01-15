@@ -24,7 +24,7 @@ export const LoginPage = () => {
       <hr />
 
       <button 
-        className="btn btn-primary"
+        className="btn btn-outline-info"
         onClick={ onLogin }
       >
         Login
