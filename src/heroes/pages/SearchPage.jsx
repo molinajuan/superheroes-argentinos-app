@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import queryString from 'query-string'
 
 import { useForm } from '../../hooks/useForm';
-import { HeroCard } from '../components';
+import { HeroSearchResultCard } from '../components';
 import { getHeroesByName } from '../helpers';
 
 export const SearchPage = () => {
@@ -79,7 +79,7 @@ export const SearchPage = () => {
 
             {
               heroes.map( hero => (
-                <HeroCard key={ hero.id } {...hero } />
+                <HeroSearchResultCard key={ hero.id } {...hero } />
               ))
             }
 

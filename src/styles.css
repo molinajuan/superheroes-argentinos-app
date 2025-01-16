@@ -96,18 +96,18 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 32px;
-    height: 32px;
+    /* width: 32px;
+    height: 32px; */
     overflow: hidden;
     top: 0;
     right: 0;
     background-color: rgba(13, 202, 240, .5);
-    border-radius: 0 4px 0 32px;
+    /* border-radius: 0 4px 0 32px; */
 }
 
 .go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
+    /* margin-top: -4px;
+    margin-right: -4px; */
     color: white;
     font-family: courier, sans;
 }
@@ -116,8 +116,23 @@ p {
     display: none;
     position: absolute;
     bottom: 8px;
+    left: 0px;
+    padding: 8px 16px;
+    z-index: 9;
+    border-radius: 0 8px 8px 0;
+    background-color: rgba(13, 202, 240);
 }
 
+.description p {
+    color: #000;
+}
+
+
+
+
+/* original animation style */
+
+/* 
 .card-img {
     transition: transform .8s ease;
 }
@@ -145,14 +160,80 @@ p {
         width: 32px;
         border-radius: 32px;
         transform: scale(1);
-        transform-origin: 50% 50%;
+        transform-origin: 0% 100%;
         transition: transform 0.25s ease-out;
     }
 
     &:hover:before {
         transform: scale(21);
     }
+} */
+
+
+
+/* card-search animation style */
+
+
+.card-search .card-img {
+    transition: transform .8s ease;
 }
+
+.card-search {
+    display: block;
+    position: relative;
+    background-color: rgba(13, 202, 240, .05);
+    border-radius: 4px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+/* custom alt animation style */
+
+.go-corner {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(13, 202, 240);
+    /* border-radius: 0 4px 0 32px; */
+}
+
+.go-arrow {
+    margin-top: 4px;
+    margin-right: 0;
+}
+
+/* 
+.card1 {
+    background-color: rgba(13, 202, 240, .05);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 9999;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+        background: rgba(13, 202, 240);
+        height: 36px;
+        width: 36px;
+        border-radius: 0;
+        transform: scale(1);
+        transform-origin: 100% 0%;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:before {
+        transform: scale(10);
+    }
+}
+
 
 .card1:hover {
     p {
@@ -175,12 +256,98 @@ p {
     }
 
     .card-img {
-        opacity: 0.1;
+        opacity: 0.1; 
         transition: transform .8s ease;
         transform: scale(1.5);
         transform-origin: 50% 0%;
     }
+} */
+
+
+
+
+
+
+
+/* chatgpt solution */
+
+.card-img {
+    transform: scale(1);
+    /* Ensure the default scale is defined */
+    transform-origin: 50% 0%;
+    /* Consistent transform origin */
+    transition: transform 0.8s ease;
+    border-radius: 0 0 8px 8px;
 }
+
+.card1 {
+    position: relative;
+    max-width: 262px;
+    background-color: rgba(13, 202, 240, 0.1);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        background: rgba(13, 202, 240);
+        height: 36px;
+        width: 36px;
+        border-radius: 0;
+        transform: scale(1);
+        /* Default scale */
+        transform-origin: 100% 0%;
+        /* Ensure consistent transform origin */
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:before {
+        transform: scale(10);
+        /* Transition to larger scale */
+    }
+
+    &:hover h3 {
+        transition: all 0.3s ease-out;
+        color: #ffffff;
+
+    }
+
+    &:hover .card-img {
+        transform: scale(1.1);
+        /* Image scales on hover */
+    }
+
+    .description {
+        display: none;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        padding: 8px 16px;
+        z-index: 9;
+        border-radius: 0 8px 8px 0;
+        background-color: rgba(13, 202, 240, 0.9);
+        transition: all 0.3s ease-in-out;
+        /* Smooth appearance */
+    }
+
+    &:hover .description {
+        display: block;
+        /* Show description on hover */
+    }
+}
+
+
+
+
+
+
 
 /* btn animation */
 /* Underline styles */

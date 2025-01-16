@@ -27,21 +27,30 @@ export const HeroCard = ({
         <a className="col card1" href={`/hero/${ id }`}>
             <div className="p-0">
                 <h3>{ superhero }</h3>
+            </div>
+            { 
+                (alter_ego != 'Unknown' || first_appearance != 'Unknown') ? 
                 
-                <div className='description'>
-                    <p className="small">{ alter_ego != 'Unknown' ? alter_ego : '' }</p>
-                    {/* <CharactersByHero characters={ characters } alter_ego={ alter_ego } /> */}
+                    <div className='description'>
+                        { 
+                            alter_ego != 'Unknown' 
+                            ? <p className="small"><b>Alter ego:</b><br/>{ alter_ego }</p> 
+                            : '' 
+                        }
+                        { 
+                            first_appearance != 'Unknown' 
+                            ? <p className="small"><b>Primera aparición:</b><br/>{ first_appearance }</p> 
+                            : '' 
+                        }
 
-                    <p className="small">
-                        <small>{ first_appearance != 'Unknown' ? first_appearance : '' }</small>
-                    </p>
-                </div>
-                <img src={ heroImageUrl } className="card-img rounded-4" alt={ superhero } />
-                <div className="go-corner">
-                    <Link className="go-arrow" to={`/hero/${ id }`}>
-                        <i class="bi bi-arrow-right"></i>
-                    </Link>
-                </div>
+                    </div> 
+                : ''
+            }
+            <img src={ heroImageUrl } className="card-img" alt={ superhero } />
+            <div className="go-corner">
+                <Link className="go-arrow" to={`/hero/${ id }`}>
+                    <i class="bi bi-arrow-right"></i>
+                </Link>
             </div>
         </a>
 

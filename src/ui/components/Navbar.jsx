@@ -18,10 +18,10 @@ export const Navbar = () => {
     }
 
     return (
-        <nav id="mainNavbar" className="navbar navbar-expand-lg navbar-light bg-info bg-opacity-10 bg-gradient p-2">
+        <nav id="mainNavbar" className="navbar navbar-expand-lg navbar-light p-2 border-info border-bottom">
             <div className="container">
                 <Link 
-                    className="navbar-brand fw-bolder" 
+                    className="navbar-brand fw-bolder text-info" 
                     to="/"
                 >
                     Superheroes Argentinos
