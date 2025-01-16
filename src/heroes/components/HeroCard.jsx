@@ -25,23 +25,22 @@ export const HeroCard = ({
     // CARD BORDERS border border-3 border-info border-opacity-25 
     return (
         <a className="col card1" href={`/hero/${ id }`}>
-            <div className="row no-gutters">
-                <div className="p-0">
-                    <h3>{ superhero }</h3>
-                    <div className='description'>
-                        <p className="small">{ alter_ego != 'Unknown' ? alter_ego : '' }</p>
-                        {/* <CharactersByHero characters={ characters } alter_ego={ alter_ego } /> */}
+            <div className="p-0">
+                <h3>{ superhero }</h3>
+                
+                <div className='description'>
+                    <p className="small">{ alter_ego != 'Unknown' ? alter_ego : '' }</p>
+                    {/* <CharactersByHero characters={ characters } alter_ego={ alter_ego } /> */}
 
-                        <p className="small">
-                            <small>{ first_appearance != 'Unknown' ? alter_ego : '' }</small>
-                        </p>
-                    </div>
-                    <div className="go-corner">
-                        <Link className="go-arrow" to={`/hero/${ id }`}>
-                            <i class="bi bi-arrow-right"></i>
-                        </Link>
-                    </div>
+                    <p className="small">
+                        <small>{ first_appearance != 'Unknown' ? first_appearance : '' }</small>
+                    </p>
+                </div>
                 <img src={ heroImageUrl } className="card-img rounded-4" alt={ superhero } />
+                <div className="go-corner">
+                    <Link className="go-arrow" to={`/hero/${ id }`}>
+                        <i class="bi bi-arrow-right"></i>
+                    </Link>
                 </div>
             </div>
         </a>
