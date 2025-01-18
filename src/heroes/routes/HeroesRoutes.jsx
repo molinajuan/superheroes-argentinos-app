@@ -1,29 +1,29 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { Footer, Navbar } from '../../ui';
-import { DcPage, AllPage, HeroPage, MarvelPage, SearchPage } from '../pages';
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Footer, Navbar } from "../../ui";
+import { DcPage, AllPage, HeroPage, MarvelPage, SearchPage } from "../pages";
+import { Hero } from "../components";
 
 export const HeroesRoutes = () => {
   return (
     <>
-        <Navbar />
+      <Navbar />
 
-        <div className="flex-grow-1 container mt-3">
-            <Routes>
-                <Route path="/" element={<AllPage />} />
-                <Route path="marvel" element={<MarvelPage />} />
-                <Route path="dc" element={<DcPage />} />
-                
-                <Route path="search" element={<SearchPage />} />
-                <Route path="hero/:id" element={<HeroPage />} />
-                                
+      <div className="flex-grow-1 container-fluid mt-3">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="all" element={<AllPage />} />
+          <Route path="marvel" element={<MarvelPage />} />
+          <Route path="dc" element={<DcPage />} />
 
-                <Route path="/" element={<Navigate to="/marvel" />} />
+          <Route path="search" element={<SearchPage />} />
+          <Route path="hero/:id" element={<HeroPage />} />
 
-            </Routes>
-        </div>
-        
-        <Footer />
+          <Route path="/" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
 
+      {/* Conditionally render Footer */}
+      {location.pathname !== "/" && <Footer />}
     </>
-  )
-}
+  );
+};

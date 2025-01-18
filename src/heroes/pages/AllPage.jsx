@@ -1,13 +1,12 @@
-import { HeroList } from '../components';
+import { HeroList } from "../components";
 
 export const AllPage = () => {
   return (
     <>
-      <h3>Lista completa</h3>
-      <hr className='border border-info opacity-50' />
+      {/* <h3>Lista completa</h3>
+      <hr className='border border-info opacity-50' /> */}
 
-      <HeroList publisher='' />
-
+      <HeroList publisher="" />
     </>
-  )
-}
+  );
+};

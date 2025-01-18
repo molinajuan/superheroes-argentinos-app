@@ -416,3 +416,112 @@ p {
 .navbar-nav a:focus::after {
   transform: translate3d(0, 0, 0);
 }
+
+/* button styles */
+a.button-comic {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited text color */
+  display: inline-block; /* Ensure proper box model */
+}
+
+/* Base styles for the button */
+.button-comic {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  background: linear-gradient(145deg, #ffc107, #ffca28); /* Amber colors */
+  border: 3px solid #000; /* Comic-style black outline */
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px #000, 5px 5px 15px rgba(0, 0, 0, 0.3); /* Bold shadow */
+  cursor: pointer;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.button-comic:hover {
+  transform: ; /* Slight rotation for comic energy */
+  box-shadow: 8px 8px 0px #000, 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button-comic:hover .button-comic-icon {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  animation: arrow-move 1.5s infinite ease-in-out;
+}
+
+/* Glow effect */
+.button-comic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.button-comic:hover::before {
+  opacity: 1;
+}
+
+/* Comic-style sound effect bubble */
+.button-comic::after {
+  content: "ZAP!";
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  background: #ffca28;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.button-comic:hover::after {
+  transform: scale(1);
+}
+
+/* Icon and animation */
+
+/* Arrow movement animation */
+@keyframes arrow-move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+/* footer */
+.social-icons {
+  font-size: 2rem;
+}
+
+.main-title {
+  font-family: "Woodchuck", sans-serif; /* Replace with your font */
+  font-size: 10rem; /* Adjust font size as needed */
+  color: white; /* White display font */
+  text-transform: uppercase; /* Optional for style */
+  text-shadow: 0px 10px 20px ambar; /* Hard black shadow */
+  line-height: 0.85;
+}
