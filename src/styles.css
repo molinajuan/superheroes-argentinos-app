@@ -1,59 +1,92 @@
 /* Import the font if not using a <link> tag */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@font-face {
+  font-family: "Woodchuck";
+  src: url("/assets/fonts/woodchuck/Woodchuck-Thin.woff2") format("woff2");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Woodchuck";
+  src: url("/assets/fonts/woodchuck/Woodchuck-Light.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Woodchuck";
+  src: url("/assets/fonts/woodchuck/Woodchuck-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Woodchuck";
+  src: url("/assets/fonts/woodchuck/Woodchuck-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Woodchuck";
+  src: url("/assets/fonts/woodchuck/Woodchuck-Heavy.woff2") format("woff2");
+  font-weight: 900; /* Heavy */
+  font-style: normal;
+}
 
 /* Set the default font for the entire project */
 body {
-    font-family: "Plus Jakarta Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    /* Default weight */
-    font-style: normal;
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* Default weight */
+  font-style: normal;
 }
 
 /* Utility classes for specific font weights */
 .plus-jakarta-sans-light {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .plus-jakarta-sans-regular {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .plus-jakarta-sans-bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .plus-jakarta-sans-extra-bold {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-
 .card {
-    background-color: #ffffff;
-    border: 2px solid rgba(13, 202, 240, 0.25);
+  background-color: #ffffff;
+  border: 2px solid rgba(13, 202, 240, 0.25);
 }
 
 .card:hover {
-    background-color: rgba(13, 202, 240, 0.1);
-    border-color: rgba(13, 202, 240, .5);
+  background-color: rgba(13, 202, 240, 0.1);
+  border-color: rgba(13, 202, 240, 0.5);
 }
 
 .custom-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 500;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
 }
 
 .custom-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 /* https://codepen.io/andrewsims/pen/mQoYwz */
 
 * {
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /* html,
@@ -72,63 +105,65 @@ body {
     justify-content: center;
 } */
 
+h1 {
+  font-family: "Woodchuck", sans-serif;
+  font-weight: 700; /* Bold */
+}
+
 h3 {
-    color: #262626;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-    margin-bottom: 4px;
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
 p {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #666666;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
 
-    &.small {
-        font-size: 14px;
-    }
+  &.small {
+    font-size: 14px;
+  }
 }
 
 .go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    /* width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* width: 32px;
     height: 32px; */
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background-color: rgba(13, 202, 240, .5);
-    /* border-radius: 0 4px 0 32px; */
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: rgba(13, 202, 240, 0.5);
+  /* border-radius: 0 4px 0 32px; */
 }
 
 .go-arrow {
-    /* margin-top: -4px;
+  /* margin-top: -4px;
     margin-right: -4px; */
-    color: white;
-    font-family: courier, sans;
+  color: white;
+  font-family: courier, sans;
 }
 
 .description {
-    display: none;
-    position: absolute;
-    bottom: 8px;
-    left: 0px;
-    padding: 8px 16px;
-    z-index: 9;
-    border-radius: 0 8px 8px 0;
-    background-color: rgba(13, 202, 240);
+  display: none;
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  padding: 8px 16px;
+  z-index: 9;
+  border-radius: 0 8px 8px 0;
+  background-color: rgba(13, 202, 240);
 }
 
 .description p {
-    color: #000;
+  color: #000;
 }
-
-
-
 
 /* original animation style */
 
@@ -169,39 +204,35 @@ p {
     }
 } */
 
-
-
 /* card-search animation style */
 
-
 .card-search .card-img {
-    transition: transform .8s ease;
+  transition: transform 0.8s ease;
 }
 
 .card-search {
-    display: block;
-    position: relative;
-    background-color: rgba(13, 202, 240, .05);
-    border-radius: 4px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
+  display: block;
+  position: relative;
+  background-color: rgba(13, 202, 240, 0.05);
+  border-radius: 4px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
 }
-
 
 /* custom alt animation style */
 
 .go-corner {
-    width: 36px;
-    height: 36px;
-    background-color: rgba(13, 202, 240);
-    /* border-radius: 0 4px 0 32px; */
+  width: 36px;
+  height: 36px;
+  background-color: rgba(13, 202, 240);
+  /* border-radius: 0 4px 0 32px; */
 }
 
 .go-arrow {
-    margin-top: 4px;
-    margin-right: 0;
+  margin-top: 4px;
+  margin-right: 0;
 }
 
 /* 
@@ -263,139 +294,125 @@ p {
     }
 } */
 
-
-
-
-
-
-
 /* chatgpt solution */
 
 .card-img {
-    transform: scale(1);
-    /* Ensure the default scale is defined */
-    transform-origin: 50% 0%;
-    /* Consistent transform origin */
-    transition: transform 0.8s ease;
-    border-radius: 0 0 8px 8px;
+  transform: scale(1);
+  /* Ensure the default scale is defined */
+  transform-origin: 50% 0%;
+  /* Consistent transform origin */
+  transition: transform 0.8s ease;
+  border-radius: 0 0 8px 8px;
 }
 
 .card1 {
-    position: relative;
-    max-width: 262px;
-    background-color: rgba(13, 202, 240, 0.1);
-    border-radius: 8px;
-    padding: 8px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
+  position: relative;
+  max-width: 262px;
+  background-color: rgba(13, 202, 240, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
 
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-        background: rgba(13, 202, 240);
-        height: 36px;
-        width: 36px;
-        border-radius: 0;
-        transform: scale(1);
-        /* Default scale */
-        transform-origin: 100% 0%;
-        /* Ensure consistent transform origin */
-        transition: transform 0.25s ease-out;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background: rgba(13, 202, 240);
+    height: 36px;
+    width: 36px;
+    border-radius: 0;
+    transform: scale(1);
+    /* Default scale */
+    transform-origin: 100% 0%;
+    /* Ensure consistent transform origin */
+    transition: transform 0.25s ease-out;
+  }
 
-    &:hover:before {
-        transform: scale(10);
-        /* Transition to larger scale */
-    }
+  &:hover:before {
+    transform: scale(10);
+    /* Transition to larger scale */
+  }
 
-    &:hover h3 {
-        transition: all 0.3s ease-out;
-        color: #ffffff;
+  &:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
 
-    }
+  &:hover .card-img {
+    transform: scale(1.1);
+    /* Image scales on hover */
+  }
 
-    &:hover .card-img {
-        transform: scale(1.1);
-        /* Image scales on hover */
-    }
+  .description {
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    padding: 8px 16px;
+    z-index: 9;
+    border-radius: 0 8px 8px 0;
+    background-color: rgba(13, 202, 240, 0.9);
+    transition: all 0.3s ease-in-out;
+    /* Smooth appearance */
+  }
 
-    .description {
-        display: none;
-        position: absolute;
-        bottom: 8px;
-        left: 0;
-        padding: 8px 16px;
-        z-index: 9;
-        border-radius: 0 8px 8px 0;
-        background-color: rgba(13, 202, 240, 0.9);
-        transition: all 0.3s ease-in-out;
-        /* Smooth appearance */
-    }
-
-    &:hover .description {
-        display: block;
-        /* Show description on hover */
-    }
+  &:hover .description {
+    display: block;
+    /* Show description on hover */
+  }
 }
-
-
-
-
-
-
 
 /* btn animation */
 /* Underline styles */
 .navbar-nav a.nav-link {
-    display: block;
-    position: relative;
-    padding: 0.2em 0;
-    color: rgba(13, 202, 240, 0.75);
-    font-weight: 600;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  color: rgba(13, 202, 240, 0.75);
+  font-weight: 600;
 }
 
 .navbar-nav a.nav-link:hover,
 .navbar-nav a.nav-link.active,
 .navbar-nav a.nav-link:focus {
-    color: rgba(13, 202, 240);
+  color: rgba(13, 202, 240);
 }
 
 /* Fade in */
 .navbar-nav a.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: rgba(13, 202, 240);
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgba(13, 202, 240);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }
 
 .navbar-nav a:hover::after,
 .navbar-nav a:focus::after {
-
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 /* Slide in */
 .navbar-nav a {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .navbar-nav a::after {
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
 }
 
 .navbar-nav a:hover::after,
 .navbar-nav a:focus::after {
-    transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
