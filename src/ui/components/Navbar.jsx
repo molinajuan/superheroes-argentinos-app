@@ -78,10 +78,52 @@ export const Navbar = () => {
 
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
             <ul className="navbar-nav ml-auto">
+              <li>
+                <a
+                  className="social-icons-links"
+                  href="mailto:molina.juanignacio@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-envelope-fill me-3" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  className="social-icons-links"
+                  href="https://www.linkedin.com/in/juanignacio-molina"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-linkedin me-3" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  className="social-icons-links"
+                  href="https://github.com/molinajuan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-github me-3" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="social-icons-links"
+                  href="https://www.behance.net/molinajuan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-behance me-3" aria-hidden="true"></i>
+                </a>
+              </li>
               <span className="nav-item nav-link text-dark">{user?.name}</span>
 
               <button className="nav-item nav-link btn" onClick={onLogout}>
-                <i className="bi bi-box-arrow-right me-2"></i>
+                <i className="bi bi-box-arrow-right me-3"></i>
                 Logout
               </button>
             </ul>
