@@ -6,7 +6,7 @@ export const Hero = () => {
       <div id="hero">
         <div className="container-fluid">
           <div className="position-relative z-2">
-            <div className="text-uppercase small text-white mb-3">
+            <div className="text-uppercase small text-dark mb-3">
               coleccion de lujo
             </div>
             <h1
