@@ -5,7 +5,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Santiago Vargas",
     first_appearance: "Detective Comics #215",
-    characters: "Santiago Vargas",
     creator: "Unknown",
   },
   {
@@ -22,7 +21,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -31,7 +29,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -40,7 +37,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -49,7 +45,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -58,7 +53,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -67,7 +61,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -76,7 +69,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -85,7 +77,6 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Unknown",
     first_appearance: "Unknown",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -94,7 +85,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Gabriel Carlos Dantes Sepúlveda",
     first_appearance: "Marvel Super Hero Contest of Champions #1 – June 1982",
-    characters: "Gabriel Carlos Dantes Sepúlveda",
     creator: "Unknown",
   },
   {
@@ -103,7 +93,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Unknown",
     first_appearance: "Flash Annual #13 – 2000",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -112,7 +101,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Unknown",
     first_appearance: "Flash Annual #13 – 2000",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -121,7 +109,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Unknown",
     first_appearance: "Batman Incorporated #3 – 2011",
-    characters: "Unknown",
     creator: "Unknown",
   },
   {
@@ -130,7 +117,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Ramón",
     first_appearance: "Venom: Lethal Protector #4",
-    characters: "Ramón",
     creator: "Unknown",
   },
   {
@@ -139,7 +125,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Unknown",
     first_appearance: "Daring Mystery Comics #1 en 1939",
-    characters: "Unknown",
     creator: "Larry Antonette",
   },
   {
@@ -148,7 +133,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Juan Luis Fernández",
     first_appearance: "Tex Taylor #2 en 1948",
-    characters: "Unknown",
     creator: "Pierce Rice",
   },
   {
@@ -157,7 +141,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Karl Lykos",
     first_appearance: "X-Men #59 en 1969",
-    characters: "Unknown",
     creator: "Pierce Rice",
   },
   {
@@ -166,7 +149,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Carlos McNally",
     first_appearance: "Marvel Graphic Novel: Rick Mason, The Agent #1 en 1989",
-    characters: "Unknown",
     creator: "James Hudnall y John Ridgway",
   },
   {
@@ -175,7 +157,6 @@ export const heroes = [
     publisher: "Marvel Comics",
     alter_ego: "Carlos LaMuerto",
     first_appearance: "Amazing Spider-Man #419 en 1996",
-    characters: "Unknown",
     creator: "Tom DeFalco y Steve Skroce",
   },
 ];
