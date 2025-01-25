@@ -5,7 +5,7 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Santiago Vargas",
     first_appearance: "Detective Comics #215",
-    creator: "Unknown",
+    creator: "Edmond Hamilton",
   },
   {
     id: "dc-super-malon",
@@ -13,7 +13,7 @@ export const heroes = [
     publisher: "DC Comics",
     alter_ego: "Supergrupo de heroes argentinos",
     first_appearance: "Flash Annual #13 – 2000",
-    creator: "Unknown",
+    creator: "Chuck Dixon y Enrique Alcatena",
   },
   {
     id: "dc-el-bagual",
