@@ -125,6 +125,8 @@ export const heroes = [
     creator: "Grant Morrison",
     year: 2011,
   },
+
+  // TODO: Add year and craetor of next characters
   {
     id: "marvel-lasher",
     superhero: "Lasher",
@@ -132,7 +134,7 @@ export const heroes = [
     alter_ego: "Ramón Hernández",
     first_appearance: "Venom: Lethal Protector #4",
     creator: "David Michelinie, Ron Lim",
-    year: "Unknown",
+    year: 1993,
   },
   {
     id: "marvel-mr-muro",
@@ -141,6 +143,7 @@ export const heroes = [
     alter_ego: "Unknown",
     first_appearance: "Daring Mystery Comics #1 en 1939",
     creator: "Larry Antonette",
+    year: 1939,
   },
   {
     id: "marvel-gaucho",
@@ -149,6 +152,7 @@ export const heroes = [
     alter_ego: "Juan Luis Fernández",
     first_appearance: "Tex Taylor #2 en 1948",
     creator: "Pierce Rice",
+    year: 1948,
   },
   {
     id: "marvel-sauron",
@@ -157,6 +161,7 @@ export const heroes = [
     alter_ego: "Karl Lykos",
     first_appearance: "X-Men #59 en 1969",
     creator: "Pierce Rice",
+    year: 1969,
   },
   {
     id: "marvel-stealth",
@@ -165,6 +170,7 @@ export const heroes = [
     alter_ego: "Carlos McNally",
     first_appearance: "Marvel Graphic Novel: Rick Mason, The Agent #1 en 1989",
     creator: "James Hudnall y John Ridgway",
+    year: 1989,
   },
   {
     id: "marvel-black-tarantula",
@@ -173,5 +179,6 @@ export const heroes = [
     alter_ego: "Carlos LaMuerto",
     first_appearance: "Amazing Spider-Man #419 en 1996",
     creator: "Tom DeFalco y Steve Skroce",
+    year: 1996,
   },
 ];
